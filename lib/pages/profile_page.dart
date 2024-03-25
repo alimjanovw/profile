@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class ProfilePage extends StatelessWidget {
-  ProfilePage({Key? key,
-   required this.nameProfile,
-   required this.surnameProfile,
-   required this.numberProfile,
-   required this.emailProfile});
+  ProfilePage(
+      {Key? key,
+      required this.nameProfile,
+      required this.surnameProfile,
+      required this.numberProfile,
+      required this.emailProfile});
 
   String nameProfile;
   String surnameProfile;
@@ -46,7 +47,7 @@ class ProfilePage extends StatelessWidget {
               style: const TextStyle(
                   color: Colors.white, fontSize: 40, fontFamily: "Yellowtail"),
             ),
-             Text( surnameProfile,
+            Text(surnameProfile,
                 style: const TextStyle(color: Colors.white, fontSize: 20)),
             const Divider(
               indent: 120,
@@ -58,7 +59,7 @@ class ProfilePage extends StatelessWidget {
                 width: double.infinity,
                 height: 55,
                 color: Colors.white,
-                child:  Row(
+                child: Row(
                   children: [
                     const Icon(
                       Icons.phone,
@@ -69,7 +70,7 @@ class ProfilePage extends StatelessWidget {
                       width: 30,
                     ),
                     Text(
-                     numberProfile,
+                      numberProfile,
                       style: const TextStyle(fontSize: 20, color: Colors.teal),
                     )
                   ],
@@ -82,7 +83,7 @@ class ProfilePage extends StatelessWidget {
                 width: double.infinity,
                 height: 55,
                 color: Colors.white,
-                child:  Row(
+                child: Row(
                   children: [
                     const Icon(
                       Icons.email,
